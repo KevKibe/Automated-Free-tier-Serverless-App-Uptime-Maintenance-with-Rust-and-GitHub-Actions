@@ -1,23 +1,23 @@
-name: Rust
+# name: Rust
 
-on:
-  schedule:
-    - cron: '*/5 * * * *' 
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: '*/5 * * * *' 
+#   workflow_dispatch:
 
 
-env:
-  CARGO_TERM_COLOR: always
+# env:
+#   CARGO_TERM_COLOR: always
 
-jobs:
-  build:
+# jobs:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: cargo build --release
-    - name: Run program
-      run: cargo run --release
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Build
+#       run: cargo build --release
+#     - name: Run program
+#       run: cargo run --release
     
